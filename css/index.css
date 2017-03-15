@@ -1,0 +1,175 @@
+.containner{
+	min-width: 350px;
+}
+/*=======searchBar======*/
+.searchBar{
+	/*height: 30px;*/
+	border-bottom:1px solid #ddd;
+	position: relative;
+	padding:10px;
+	background-color: white;
+}
+.searchBar .searchText input{
+	height: 30px;
+	width: 90%;
+	background-color: #f1f1f1;	
+	border-radius:15px;
+	padding-left: 5%;
+	font-size:16px;
+}
+.searchBar .searchButton input{
+	width: 63px;
+	height: 30px;
+	background-color: #ff841d;
+	border-radius:15px;
+	color:white;
+	font-size: 16px;
+	position: absolute;
+	right:10px;
+	top: 10px;
+}
+/*=======mainCategory======*/
+.mainCategory{
+	padding: 6px 0;
+	background-color: white;
+
+}
+.mainCategory .row{
+	padding:16px 16px 0px;
+}
+.mainCategory .col-xs-3{
+	text-align: center;
+	margin-bottom: 15px;
+
+}
+.mainCategory .col-xs-3 a{
+	display: block;
+}
+.mainCategory .col-xs-3 img{
+	width: 50px;
+	height: 50px;
+	margin-bottom: 2px;
+}
+.mainCategory .col-xs-3 div{
+	font-size: 13px;
+	color:#5a5a5a;
+}
+/*======discountRecoment======*/
+.discountRecoment{
+	/*height: 35px;*/
+	margin-top: 4px;
+	position: relative;
+	/*background-color: white;*/
+}
+.discountRecoment .reTitle{
+	padding-left:10px;
+	line-height: 35px;
+	background-color: #ff9000;
+	border:1px solid  #ffc881;
+}
+.discountRecoment .reTitle span{
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+.discountRecoment .reTitle img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right:10px;
+	top: 7px;
+}
+
+.discountRecoment .reContent ul li {
+	padding:14px 8px;
+	background-color: white;
+	border-bottom:1px solid #ccc;
+}
+.discountRecoment .reContent ul li > a {
+	display: block;
+}
+.discountRecoment .reContent .pic{
+	width: 110px;
+}
+.discountRecoment .reContent  img {
+	width: 100px;
+	height: 100px;
+} 
+.discountRecoment .reContent .other {
+	margin-left:10px;
+	overflow: hidden;
+	padding-left:90px: 
+}
+.discountRecoment .reContent .other .info{
+	font-size: 12px;
+	color:#a1a1a1;
+	margin-top: 30px;
+}
+.discountRecoment .more{
+	/*height: 30px;*/
+
+}
+.discountRecoment .more a{
+	display: block;
+	width: 100%;
+	margin:5px;
+	border-radius:5px;
+	text-align: center;
+	line-height: 30px;	
+	border:1px solid #dddddd;
+	background-image: linear-gradient(#ffffff,#f4f4f4);
+}
+
+/*=====brandRank=======*/
+.brandRank{
+	/*height: 30px;*/
+	background-color: #ff9000;
+	position: relative;
+}
+.brandRank > a {
+	display: block;
+}
+.brandRank .brTitle span{
+	color: white;
+	font-size:18px;
+	font-weight: bold;
+	padding-left:10px;
+	line-height: 35px;
+}
+.brandRank .brTitle img{
+	                                                                                                                                                            20px 20px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 10px;
+	top:7px;
+}
+.foot{
+	margin-top:5px;
+	background-color: #efefef;
+}
+.foot .foot-btn ul {
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	width: 100%;
+}
+.foot .foot-btn li{
+	float: left;
+	width: 33.1111%;
+	text-align: center;
+}
+.foot .foot-btn a {
+	display: inline-block;
+	line-height: 34px;
+}
+.foot .foot-btn .center-btn {
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.foot .loginUrl {
+	/*height: 68px;*/
+	text-align: center;
+	font-size: 12px;
+	padding-top:15px;
+	padding-bottom:15px;
+}

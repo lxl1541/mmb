@@ -1,0 +1,94 @@
+/*重置浏览器默认属性*/
+*,::before,::after{
+	margin:0;
+	padding:0;
+	-webkit-tap-hightlight-color:transparent;
+	/*-webkit-box-sizing:content-box;*/
+}
+body{
+	font-size: 14px;
+	color:#5a5a5a;
+	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+	background-color: #f7f7f7;
+
+}
+input,textarea{
+	border:none;
+	outline:none;
+	resize:none;
+	-webkit-appearance:none;
+}
+ul,ol{
+	list-style:none;
+}
+i,s,{
+	font-style:none;
+}
+a{
+	text-decoration:none;
+	color:#333333;
+}
+a:hover{
+	text-decoration: none;
+}
+
+
+/*公用的样式*/
+.fl{
+	float:left;
+}
+.fr{
+	float: right;
+}
+.clearfix::before,
+.clearfix::after{
+	content:" ";
+	height: 0;
+	line-height: 0;
+	visibility:hidden;
+	display:block ;
+	clear:both;
+}
+.clearfix{
+	*zoom:1;
+}
+.mainColor{
+	color:#ff841d;
+}
+/*=======header=======*/
+.header{
+	height: 50px;
+	/*width: 100%;*/
+	background-color: #ff841d;
+	border-bottom:1px solid #e6e6e6;
+
+}
+.header .logo{
+	margin-left:5px;
+	padding:12px;
+	width: 75%;
+}
+.header .logo a{
+	display: block;
+	height: 100%;
+	/*padding-top:12px;*/
+}
+.header .logo a img{
+	/*width: 185px;*/
+	max-height: 25px;
+	/*line-height:50px;*/
+	overflow: hidden;
+}
+.header .appDown{
+	/*height:50px;*/
+	padding:7px;
+}
+.header .appDown a{
+	display: block;
+}
+.header .appDown img{
+	/*width: 34px;*/
+	max-height: 34px;
+}
+
+
