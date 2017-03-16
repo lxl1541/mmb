@@ -1,45 +1,19 @@
-.containner{
-	min-width: 350px;
-}
-/*=======searchBar======*/
-.searchBar{
-	/*height: 30px;*/
-	border-bottom:1px solid #ddd;
-	position: relative;
-	padding:10px;
-	background-color: white;
-}
-.searchBar .searchText input{
-	height: 30px;
-	width: 90%;
-	background-color: #f1f1f1;	
-	border-radius:15px;
-	padding-left: 5%;
-	font-size:16px;
-}
-.searchBar .searchButton input{
-	width: 63px;
-	height: 30px;
-	background-color: #ff841d;
-	border-radius:15px;
-	color:white;
-	font-size: 16px;
-	position: absolute;
-	right:10px;
-	top: 10px;
-}
+
+
 /*=======mainCategory======*/
 .mainCategory{
 	padding: 6px 0;
 	background-color: white;
-
+	display: block;
 }
 .mainCategory .row{
 	padding:16px 16px 0px;
+	margin:0;
 }
 .mainCategory .col-xs-3{
 	text-align: center;
 	margin-bottom: 15px;
+	padding:0;
 
 }
 .mainCategory .col-xs-3 a{
@@ -53,6 +27,13 @@
 .mainCategory .col-xs-3 div{
 	font-size: 13px;
 	color:#5a5a5a;
+}
+.mainCatShow{
+	height:300px;
+}
+.mainCatHidd{
+	height: 190px;
+	overflow: hidden;
 }
 /*======discountRecoment======*/
 .discountRecoment{
@@ -105,9 +86,8 @@
 	color:#a1a1a1;
 	margin-top: 30px;
 }
-.discountRecoment .more{
-	/*height: 30px;*/
-
+.discountRecoment .reContent .other .info .iconfont{
+	margin-right: 3px;
 }
 .discountRecoment .more a{
 	display: block;
@@ -143,33 +123,4 @@
 	position: absolute;
 	right: 10px;
 	top:7px;
-}
-.foot{
-	margin-top:5px;
-	background-color: #efefef;
-}
-.foot .foot-btn ul {
-	border-top:1px solid #ccc;
-	border-bottom:1px solid #ccc;
-	width: 100%;
-}
-.foot .foot-btn li{
-	float: left;
-	width: 33.1111%;
-	text-align: center;
-}
-.foot .foot-btn a {
-	display: inline-block;
-	line-height: 34px;
-}
-.foot .foot-btn .center-btn {
-	border-left:1px solid #ccc;
-	border-right:1px solid #ccc;
-}
-.foot .loginUrl {
-	/*height: 68px;*/
-	text-align: center;
-	font-size: 12px;
-	padding-top:15px;
-	padding-bottom:15px;
 }

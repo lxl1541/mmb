@@ -10,12 +10,27 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="lib/bootstrap/fonts/">
+	<link rel="stylesheet" href="lib/iconfont/iconfont.css">
 	<!-- <link rel="shortcut icon" href="path/to/favicon.ico"> -->
 
 	<script src="lib/jquery/jquery.min.js"></script>
 	<script src="js/index.js"></script>
 	<script src="lib/template.js"></script>
 	
+	
+	<script id="mainCate" type="text/html">
+	 	<div class="row">
+			 	{{each result as value}}
+					<div class="col-xs-3" name="{{value.name}}">
+						<a href="{{value.titlehref}}">
+							{{#value.img}}
+							<div>{{value.name}}</div>
+						</a>
+					</div>
+					
+			 	{{/each}}
+		</div>
+	</script>
 	<script id="discoutRe" type="text/html">	
 		{{each result as value index}}
 			
@@ -31,7 +46,7 @@
 						</div>
 						<div class="info">
 							<span>慢慢买|{{value.productTime}}</span>
-							<span class="comment">79</span>
+							<span class="comment fr"><i class="iconfont icon-discuss"></i>{{(/\d+/).exec(value.productComCount)[0]}}</span>
 						</div>
 					</div>
 				</a>
@@ -39,23 +54,10 @@
 			
 		{{/each}}
 	</script>
-	<script id="mainCate" type="text/html">
-	 		<div class="row">
-	 	{{each result as value}}
-			<div class="col-xs-3">
-				<a href="#">
-					{{#value.img}}
-					<div>{{value.name}}</div>
-				</a>
-			</div>
-			
-	 	{{/each}}
-		</div>
-	</script>
 </head>
 <body>
-	<div class="containner">
-			<!-- 头部 -->
+	<!-- <div class="containner"> -->
+	<!-- 头部 -->
 	<div class="header clearfix">
 		<div class="logo fl">
 			<a href="#"><img src="images/header_logo.png" alt="logo"></a>
@@ -178,9 +180,9 @@
 								2017智慧网购专题：直击315
 								<span class="mainColor">13点更新：消费维权成本高</span>
 							</div>
-							<div class="info">
+							<div class="info ">
 								<span>慢慢买|03-15 13:03</span>
-								<span class="comment">79</span>
+								<span class="comment fr"><i class="iconfont icon-taolun"></i></span>
 							</div>
 						</div>
 					</a>
@@ -207,7 +209,7 @@
 			<ul class="clearfix">
 				<li><a href="#">登录</a></li>
 				<li class="center-btn"><a href="#">注册</a></li>
-				<li><a href="#">返回顶部</a></li>
+				<li><a href="#"><i class="iconfont icon-arrowupx-copy"></i>返回顶部</a></li>
 			</ul>
 		</div>
 		<div class="loginUrl">
@@ -215,7 +217,7 @@
 			<p>m.manmanbuy.com</p>
 		</div>
 	</div>
-	</div>
+	<!-- </div> -->
 </body>
 	
 </html>

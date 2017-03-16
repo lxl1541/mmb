@@ -6,11 +6,10 @@
 	/*-webkit-box-sizing:content-box;*/
 }
 body{
-	font-size: 14px;
+	font-size: 0.7rem;
 	color:#5a5a5a;
 	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
 	background-color: #f7f7f7;
-
 }
 input,textarea{
 	border:none;
@@ -91,4 +90,65 @@ a:hover{
 	max-height: 34px;
 }
 
-
+/*=======searchBar======*/
+.searchBar{
+	/*height: 30px;*/
+	border-bottom:1px solid #ddd;
+	position: relative;
+	padding:10px;
+	background-color: white;
+}
+.searchBar .searchText input{
+	height: 30px;
+	width: 90%;
+	background-color: #f1f1f1;	
+	border-radius:15px;
+	padding-left: 5%;
+	font-size:16px;
+}
+.searchBar .searchButton input{
+	width: 63px;
+	height: 30px;
+	background-color: #ff841d;
+	border-radius:15px;
+	color:white;
+	font-size: 16px;
+	position: absolute;
+	right:10px;
+	top: 10px;
+}
+/*===========foot=========*/
+.foot{
+	margin-top:5px;
+	background-color: #efefef;
+}
+.foot .foot-btn ul {
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	width: 100%;
+}
+.foot .foot-btn li{
+	float: left;
+	width: 33.1111%;
+	text-align: center;
+}
+.foot .foot-btn a {
+	display: inline-block;
+	line-height: 34px;
+}
+.foot .foot-btn .center-btn {
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.foot .loginUrl {
+	/*height: 68px;*/
+	text-align: center;
+	font-size: 12px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.foot .foot-btn  .icon-arrowupx-copy{
+	font-size: 14px;
+	color:rgb(119, 113, 113);
+	margin-right: 2px;
+}
