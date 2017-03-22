@@ -1,0 +1,58 @@
+
+/*========proContent===========*/
+.product .proContent > a {
+	display: block;
+	border-bottom:1px solid #ccc;
+	background-color: white;
+	padding-top:10px;
+}
+.product .proContent .proImg {
+
+	float:left;
+	padding-left:10px;
+}
+.product .proContent .proImg img {
+	width: 110px;
+	height: 120px;
+}
+.product .proContent .info {
+	height: 130px;
+	padding-left: 130px;
+	position: relative;
+
+}	
+.product .proContent .info .info-tt {
+	font-size: 15px;
+	line-height: 25px;
+	overflow: hidden;
+}
+.product .proContent .info .price {
+	color:red;
+	font-size:18px;
+	font-weight: 500;
+	line-height: 30px;
+}
+.product .proContent .info .price span {
+	font-size: 12px;
+}
+
+
+.product .proContent .info .info-foot{
+	position: absolute;
+	top:90px;
+	height: 30px;
+	width: 100%;
+}
+.product .proContent .info .info-foot span{
+	color:#aaa;
+	position: absolute;
+}
+.product .proContent .info .info-foot .info-bj{
+	/*position: absolute;*/
+
+	left: 10px;
+}
+.product .proContent .info .info-foot .info-com{
+	/*position: absolute;*/
+	right: 140px;
+}

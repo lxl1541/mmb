@@ -2,22 +2,75 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>moneyctr</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-
+	
+	<link rel="stylesheet" href="lib/iconfont/iconfont.css">
 	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/moneyctrl.css">
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/template.js"></script>
+	<!-- 超值折扣模板 -->
+	<script id="discoutRe" type="text/html">	
+		{{each result as value index}}
+			
+			<li class="clearfix">
+				<a href="moneyctrPro.html?productid={{value.productId}}">
+					<div class="pic fl">
+						{{#value.productImgSm}}
+					</div>
+					<div class="other">
+						<div class="title">
+							{{value.productName}}
+							<span class="mainColor">{{value.productPinkage}}</span>
+						</div>
+						<div class="info">
+							<span>慢慢买|{{value.productTime}}</span>
+							<span class="comment fr">
+							<i class="iconfont icon-discuss"></i>
+							{{if value.productComCount}}
+								{{(/\d+/).exec(value.productComCount)[0]}}
+							{{else}}
+								0
+							{{/if}}
+							</span>
+						</div>
+					</div>
+				</a>
+			</li>		
+			
+		{{/each}}
+	</script>
 </head>
 <body>
 	<div class="containner">
 		<!-- 头部 -->
 		<div class="header clearfix">
-			<div class="logo fl">
-				<a href="#"><img src="images/header_logo.png" alt="logo"></a>
-			</div>
+			<a href="index.html" class="iconfont icon-jiantou-copy"></a>
+			<p>省钱控 - 最新优惠</p>
 			<div class="appDown fr">
 				<a href="#">
 					<img src="images/header_app.png" alt="app">
 				</a>
+			</div>
+		</div>
+		<!-- 内容 -->
+		<div class="discountRecoment clearfix product">
+			<div class="reContent">
+				<ul id="discountUl">
+				</ul>
+			</div>
+			<!-- 商品分页 -->
+			<div class="proPage clearfix" >
+				<a href="#" class="prePage" onclick="return false">上一页</a>
+				<form action="#">
+					<select class="pageSelect">
+						<!-- <option value="1">1/10</option> -->
+						<!-- <option value="2">2/10</option> -->
+						<!-- <option value="3">3/10</option> -->
+					</select>
+				</form>
+				<a href="#" class="nextPage" onclick="return false">下一页</a>
 			</div>
 		</div>
 		<!-- 底部 -->
@@ -37,4 +90,7 @@
 	</div>
 
 </body>
+<script src="js/base.js"></script>
+<script src="js/proList.js"></script>
+<script src="js/moneyctrl.js"></script>
 </html>

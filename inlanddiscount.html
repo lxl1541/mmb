@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x:hidden">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/moneyctrl.css">
+	<link rel="stylesheet" href="css/inlanddiscoun.css">
+
+	<script src="lib/jquery/jquery.js"></script>
+	<script src="lib/template.js"></script>
+	<script type="text/html" id="getDiscountProTemp">
+		{{each result as value}}
+			<div class="col-xs-6">
+					<a href="#">
+						<div class="pic">
+							<!-- <img src="images/dianfanbao.jpg" alt=""> -->
+							{{#value.productImg}}
+						</div>
+						<div class="info">
+							<p class="info-tt">{{value.productName}}</p >
+							<p class="mainColor">{{value.productPrice}}</p>
+							<p class="last">{{value.productFrom}} | {{value.productTime}}</p>
+						</div>
+					</a>
+				</div>
+		{{/each}}
+	</script>
+</head>
+<body>
+	<div class="containner">
+		<!-- 头部 -->
+		<div class="header clearfix">
+			<a href="index.html" class="iconfont icon-jiantou-copy"></a>
+			<p>国内折扣</p>
+			<div class="appDown fr">
+				<a href="#">
+					<img src="images/header_app.png" alt="app">
+				</a>
+			</div>
+		</div>
+		<!-- 国内折扣内容 -->
+		<div class="discountPro">
+			<div class="row">
+				<!-- <div class="col-xs-6">
+					<a href="#">
+						<div class="pic">
+							<img src="images/dianfanbao.jpg" alt="">
+						</div>
+						<div class="info">
+							<p class="info-tt">￥1019.53 EVGA水电铜)电脑组件 GTX 1080 (400-HC-5189-B1)</p >
+							<p class="mainColor">1019.32元</p>
+							<p class="last">中国亚马逊 | 2017/3/22 12:21</p>
+						</div>
+					</a>
+				</div> -->
+				<!-- <div class="col-xs-6">
+					<a href="#">
+						<div class="pic">
+							<img src="images/dianfanbao.jpg" alt="">
+						</div>
+						<div class="info">
+							<p class="info-tt">￥1019.53 EVGA水电铜)电脑组件 GTX 1080 (400-HC-5189-B1)</p>
+							<p class="mainColor">1019.32元</p>
+							<p class="last">中国亚马逊 | 2017/3/22 12:21</p>
+						</div>
+					</a>
+				</div> -->
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="foot">
+			<div class="foot-btn">
+				<ul class="clearfix">
+					<li><a href="#">登录</a></li>
+					<li class="center-btn"><a href="#">注册</a></li>
+					<li><a href="#"><i class="iconfont icon-arrowupx-copy"></i>返回顶部</a></li>
+				</ul>
+			</div>
+			<div class="loginUrl">
+				<a href="#"><span class="mainColor">手机APP下载</span>慢慢买手机版--掌上比价平台</a>
+				<p>m.manmanbuy.com</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/inlanddiscount.js"></script>
+</html>

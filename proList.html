@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>proList</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/proList.css">
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/template.js"></script>
+	
+	<!-- 分类导航模板 -->
+	<script type="text/html" id="cateByid">
+		{{if result}}
+		{{each result as value}}
+			<a href="#">{{value.category}}</a>&gt;
+		{{/each}}
+		{{/if}}
+	</script>
+	<!-- 商品列表模板 -->
+	<script type="text/html" id="proLists">
+		{{each result as value}}
+			<a href="oneproduct.html?productId={{value.productId}}&&category=" class="onePro" >
+					<div class="proImg">
+						<!-- <img src="images/tele.jpg" alt="电视"> -->
+						{{#value.productImg}}
+					</div>
+					<div class="info">
+						<div class="info-tt">{{value.productName}}</div>
+						<div class="price"><span>&yen;</span>{{/\d+/.exec(value.productPrice)[0]}}</div>
+						<div class="info-foot ">
+							<span class="info-bj ">{{if /\d+/.exec(value.productQuote)}}{{/\d+/.exec(value.productQuote)[0]}}{{/if}}商城报价</span>
+							<span class="info-com">有{{/\d+/.exec(value.productCom)[0]}}人评论</span>
+						</div>
+					</div>
+			</a>
+		{{/each}}
+	</script>
+	
+</head>
+<body>
+	<div class="containner">
+		<!-- 头部 -->
+		<div class="header clearfix">
+			<div class="logo fl">
+				<a href="#"><img src="images/header_logo.png" alt="logo"></a>
+			</div>
+			<div class="appDown fr">
+				<a href="#">
+					<img src="images/header_app.png" alt="app">
+				</a>
+			</div>
+		</div>
+		<!-- 搜索部分 -->
+		<form action="#">
+			<div class="searchBar ">
+				<div class="searchText">
+					<input type="text" name="" id="" placeholder="请输入你想比价的商品">
+				</div>
+				<div class="searchButton">
+					<input type="submit" value="搜索">
+				</div>
+			</div>
+		</form>
+		<!-- 商品 -->
+		<div class="product">
+			<!-- 商品导航栏 -->
+			<div class="proNav">
+				<a href="index.html">首页</a>&gt;
+				<a href="category.html">全部分类</a>&gt;
+				<a href="#" class="filterBtn">筛选</a>
+			</div>
+			<!-- 商品内容 -->
+			<div class="proContent">
+				<!-- <a>
+					<div class="proImg">
+						<img src="images/tele.jpg" alt="电视">
+					</div>
+					<div class="info">
+						<div class="info-tt">康佳(KONKA) LED32E330C 32英寸 高清 720P 普通LED液晶电视</div>
+						<div class="price"><span>&yen;</span>1145</div>
+						<div class="info-foot ">
+							<span class="info-bj ">6商城报价</span>
+							<span class="info-com">有4232人评论</span>
+						</div>
+					</div>
+				</a> -->
+			
+			</div>
+			<!-- 商品分页 -->
+			<div class="proPage clearfix" >
+				<a href="#" class="prePage" onclick="return false">上一页</a>
+				<form action="#">
+					<select class="pageSelect">
+						<!-- <option value="1">1/10</option> -->
+						<!-- <option value="2">2/10</option> -->
+						<!-- <option value="3">3/10</option> -->
+					</select>
+				</form>
+				<a href="#" class="nextPage" onclick="return false">下一页</a>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="foot">
+			<div class="foot-btn">
+				<ul class="clearfix">
+					<li><a href="#">登录</a></li>
+					<li class="center-btn"><a href="#">注册</a></li>
+					<li><a href="#"><i class="iconfont icon-arrowupx-copy"></i>返回顶部</a></li>
+				</ul>
+			</div>
+			<div class="loginUrl">
+				<a href="#"><span class="mainColor">手机APP下载</span>慢慢买手机版--掌上比价平台</a>
+				<p>m.manmanbuy.com</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/base.js"></script>
+<script src="js/proList.js"></script>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>moneyctrPro</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<link rel="stylesheet" href="lib/iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/moneyctrl.css">
+	<link rel="stylesheet" href="css/moneyctrPro.css">
+	
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/template.js"></script>
+	<!-- 省钱控详情页模板 -->
+	<script type="text/html" id="moneyctrProTemp">
+		{{each result as value}}
+			<div class="proTitle">
+				<h3>
+					{{value.productName}}
+				</h3>
+				<h4 class="mainColor">{{value.productPinkage}}</h4>
+				<div class="proTitle-info">
+					<span>{{value.productFrom}}</span>
+					<span>{{value.productTime}}</span>
+					<span>{{value.productTips}}</span>
+				</div>
+			</div>
+			<div class="proInfo">
+				<div class="shortInfo clearfix">
+					<!-- <img src="images/电池.jpg" alt=""> -->
+					{{#value.productImgSm}}
+					<div class="txt">
+						{{value.productInfo2}}
+					</div>
+				</div>
+				<div class="detailInfo">
+					<p>{{value.productInfo}}</p>
+					<div class="jpg">
+						<!-- <img src="images/电池.jpg" alt=""> -->
+						{{#value.productImgSm}}
+					</div>
+				</div>
+			</div>
+		{{/each}}
+	</script>
+	<!-- 地址模板 -->
+	<script type="text/html" id="proCityTemp">
+		{{each result as value}}
+			{{#value.productCity}}
+		{{/each}}
+	</script>
+</head>
+<body>
+	<div class="containner">
+		<!-- 头部 -->
+		<div class="header clearfix">
+			<a href="index.html" class="iconfont icon-jiantou-copy"></a>
+			<p>国内折扣</p>
+			<div class="appDown fr">
+				<a href="#">
+					<img src="images/header_app.png" alt="app">
+				</a>
+			</div>
+		</div>
+		<!-- 商品信息介绍 -->
+		<div class="onePro">
+			<!-- <div class="proTitle">
+				<h3>
+					<span class="fontWeight">MI </span>小米 <span class="fontWeight">5</span>号电池 彩虹电池碱性 <span class="fontWeight">5</span>号（<span class="fontWeight">10</span>粒装）
+				</h3>
+				<h4 class="mainColor">9.8元</h4>
+				<div class="proTitle-info">
+					<span>京东商城</span>
+					<span>03-22 09:42</span>
+					<span>小编慕斯 / 慢慢买</span>
+				</div>
+			</div>
+			<div class="proInfo">
+				<div class="shortInfo">
+					<img src="images/电池.jpg" alt="">
+
+					<div class="txt">
+						小米彩虹系列5号电池，除了绚丽的五彩外观外，这款5号电池套装，
+						同样主打安全环保材质制造，采用了日立的maxell电芯，电量是否持久
+						就得看具体效果。其无汞无镉属性，并且可以和日常的垃圾一起扔掉。
+					</div>
+				</div>
+				<div class="detailInfo">
+					<p>京东目前特价9.8元，近期低价，有需要的慢友可考虑凑单带入。</p>
+					<div class="jpg">
+						<img src="images/电池.jpg" alt="">
+						
+					</div>
+				</div>
+			</div> -->
+		</div>
+		<!-- 商品地区 -->
+			<div class="area">
+				<!-- <ul>
+					<li class="clearfix">
+						<a href="javascript:">
+							<span class="fl">北京</span>
+							<span class="fr mainColor">有货</span>
+						</a>
+					</li>
+					<li class="clearfix">
+						<a href="javascript:">
+							<span class="fl">北京</span>
+							<span class="fr mainColor">有货</span>
+						</a>
+					</li>
+				</ul> -->
+			</div>
+		<!-- 前往购买 -->
+			<div class="toBuy">
+				<a href="javascript:">前往购买</a>
+			</div>
+		<!-- 发表评论 -->
+			<div class="com">
+				<div class="comInput ">
+					<p>发表评论</p>
+					<div class="form ">
+						<textarea name="" id="" cols="20" rows="4"></textarea>
+						<div class="sub clearfix">
+							<input type="submit" value="发表评论" >
+						</div>
+					</div>
+				</div>
+				<div class="comOut">
+					<p>最新评论</p>
+				</div>
+				
+			</div>
+		<!-- 底部 -->
+		<div class="foot">
+			<div class="foot-btn">
+				<ul class="clearfix">
+					<li><a href="#">登录</a></li>
+					<li class="center-btn"><a href="#">注册</a></li>
+					<li><a href="#"><i class="iconfont icon-arrowupx-copy"></i>返回顶部</a></li>
+				</ul>
+			</div>
+			<div class="loginUrl">
+				<a href="#"><span class="mainColor">手机APP下载</span>慢慢买手机版--掌上比价平台</a>
+				<p>m.manmanbuy.com</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/moneyctrPro.js"></script>
+</body>
+</html>

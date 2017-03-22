@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>product</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/oneproduct.css">
+	
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/template.js"></script>
+	<!-- 商品导航模板 -->
+	<script id="proNavTemp" type="text/html">
+		{{each result as value}}
+			<a href="#">{{(value.productName).split(" ")[0]}}</a>&gt;
+		{{/each}}
+	</script>
+	<!-- 商品信息模板 -->
+	<script type="text/html" id="proInfoTemp">
+		{{each result as value}}
+			<div class="proName">{{value.productName}}</div>
+			<div class="proImg">
+				<!-- <img src="images/tele.jpg" alt=""> -->
+				{{#value.productImg}}
+			</div>
+		{{/each}}
+	</script>
+	<script type="text/html" id="proComTemp">
+		{{each result as value}}
+			<div class="tc-head ">
+				<div class="one clearfix">
+					<div class="fl">{{value.comName}}</div>
+					<div class="fr">{{value.comTime}}</div>
+				</div>
+				<div class="two clearfix">
+					<div class="fl">
+						<span class="mainColor">☆☆☆☆</span>☆
+					</div>
+					<div class="fr">{{value.comFrom}}</div>
+				</div>
+			</div>
+			<div class="tc-content">
+				{{value.comContent}}                
+			</div>
+		{{/each}}
+	</script>
+</head>
+<body>
+	<div class="containner">
+		<!-- 头部 -->
+		<div class="header clearfix">
+			<div class="logo fl">
+				<a href="#"><img src="images/header_logo.png" alt="logo"></a>
+			</div>
+			<div class="appDown fr">
+				<a href="#">
+					<img src="images/header_app.png" alt="app">
+				</a>
+			</div>
+		</div>
+		<!-- 搜索部分 -->
+		<form action="#">
+			<div class="searchBar ">
+				<div class="searchText">
+					<input type="text" name="" id="" placeholder="请输入你想比价的商品">
+				</div>
+				<div class="searchButton">
+					<input type="submit" value="搜索">
+				</div>
+			</div>
+		</form>
+		<!-- 商品 -->
+		<div class="product">
+			<!-- 商品导航栏 -->
+			<div class="proNav">
+				<a href="index.html">首页</a>&gt;
+				<a href="proList.html?categoryId=" class="categoryName">电视</a>&gt;
+				<a href="#" class="filterBtn">筛选</a>
+			</div>
+			<!-- 商品介绍 -->
+			<div class="proIntroduce">
+				<!-- <div class="proName">
+					奥克斯(AUX) KFR-25GW/FK01+3 1匹 挂壁式定速冷暖空调
+				</div>
+				<div class="proImg">
+					<img src="images/tele.jpg" alt="">
+				</div> -->
+				<a href="#" class="collect">收藏</a>
+			</div>
+			<!-- 比价、评价、商品参数 -->
+			<div class="proOther">
+				<!-- 导航 -->
+					<ul class="clearfix ult">
+						<li><a href="#" class="orange jian">比价购买</a></li>
+						<li><a href="#" class="prama yellow">产品参数</a></li>
+						<li><a href="#" class="yellow">优选评价</a></li>
+					</ul>
+				<!-- 导航内容 -->
+					<ul class="ulc">
+						<!-- 比价购买 -->
+						<li>
+							<!-- 比价购买快速入口 -->
+							<div class="fastEnter">
+								<!-- <a href="#" class="buy clearfix">
+									<div class="fl">
+										<img src="images/niu.png" alt="">
+										<span>飞牛网</span>
+									</div>
+									<div class="fr">
+										<span class="price">￥1145.00</span>
+										<span class="btn">去购买</span>
+									</div>
+								</a> -->
+								
+								
+								<div class="focus">*实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</div>
+							</div>
+							<!-- 网友评价 -->
+							<div class="userEstimate">
+								<div class="tt">
+									网友评价
+								</div>
+								<div class="tc">
+									<!-- <div class="tc-head ">
+										<div class="one clearfix">
+											<div class="fl">斯***文</div>
+											<div class="fr">2012/9/13</div>
+										</div>
+										<div class="two clearfix">
+											<div class="fl">
+												<span class="mainColor">☆☆☆☆</span>☆
+											</div>
+											<div class="fr">购买自：亚马逊</div>
+										</div>
+									</div> -->
+									<!-- <div class="tc-content">
+										屏幕不是完美屏，初步看有4,5个暗点。给康佳400打电话咨询，说中央的确有3个以上给换，也懒得换了，不太影响观看。挺适合普通家庭使用的，在这里给没买朋友一些建议。电视功能多了没用，很多电视以很多功能（上网，游戏）等等，价格虚高，其实一个普通电视，再单买一个游戏机，或者网络播放器，效果要比电视自带的功能好很多很多，价格也更实惠。屏幕看起来比较细长。边很窄，但是略厚，至于ＬＥＤ这个说词，什么发光，背光的，普通用户根本整不明白。总之一句话，这电视还行，挺实惠。节能补贴从9月13开始申请到现在已经将近3个月，发了上百次邮件，打过10多次电话，就是进行不下去，亚马逊你们到底什么意思？                
+									</div> -->
+									<a class="tc-reback">回复</a>
+								</div>
+								
+								<!-- 更多评价 -->
+								<div class="moreEstimate">
+									<a href="#">查看更多评价</a>
+								</div>
+							</div>
+
+						</li>
+						<!-- 产品参数 -->
+						<li></li>
+						<!-- 优选评价-->
+						<li></li>
+					</ul>
+				</div>			
+		</div>
+		<!-- 底部 -->
+		<div class="foot">
+			<div class="foot-btn">
+				<ul class="clearfix">
+					<li><a href="#">登录</a></li>
+					<li class="center-btn"><a href="#">注册</a></li>
+					<li><a href="#"><i class="iconfont icon-arrowupx-copy"></i>返回顶部</a></li>
+				</ul>
+			</div>
+			<div class="loginUrl">
+				<a href="#"><span class="mainColor">手机APP下载</span>慢慢买手机版--掌上比价平台</a>
+				<p>m.manmanbuy.com</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/oneproduct.js"></script>
+</html>

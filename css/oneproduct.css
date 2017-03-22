@@ -1,0 +1,152 @@
+
+.proIntroduce {
+	background-color: white;
+	padding-top: 20px;
+	position:relative;
+
+}
+.proIntroduce .proImg {
+	text-align: center;
+}
+.proIntroduce .proName{
+	font-size: 16px;
+	color:black;
+	text-align: center;
+}
+.proIntroduce .collect {
+	width: 40px ;
+	line-height: 40px ;
+	/*display: block;*/
+	border-radius:50%;
+	background-color: #44a916;
+	text-align:center;
+	font-size: 14px;
+	color: white;
+	position: absolute;
+	right: 10px;
+	top:150px;
+}
+
+
+.proOther  {
+	/*height: 34px;*/
+	margin-top:20px;
+}
+.proOther  .ult{
+	border-top:1px solid #c14d00;
+	border-bottom:1px solid #c14d00;
+}
+.proOther  .ult li{
+	float:left;
+	width:33.333%;
+
+}
+
+.proOther  .ult li >a {
+	display: block;
+	font-size:15px;
+	color:white;
+	text-align:center;
+	line-height: 34px;
+	position: relative;
+
+}
+.yellow{
+	background-color:#ffbb00;
+
+}
+.orange{
+	background-color:#ff6600;
+}
+
+.proOther  .ult li a.jian::before{
+	content:"";
+	width: 6px;
+	height: 6px;
+	background-color: #ff6600;
+	position: absolute;
+	top: 32px;
+	left: 50px;
+	-webkit-transform-origin: center;
+	-webkit-transform: rotate(45deg);	
+}
+.proOther  .ult li .prama{
+	border-left:1px solid #c14d00;
+	border-right:1px solid #c14d00;
+}
+.proOther  .ulc li table{
+	border-bottom:1px solid #c7c0c0;
+
+}
+.proOther  .ulc li tr{
+	line-height: 45px;
+	font-size: 14px;
+
+}
+
+.proOther  .ulc li .p_pic{
+	padding-left:7px;
+	width:30px;
+}
+.proOther  .ulc li .red{
+	color: red;
+	font-size: 16px;
+}
+.proOther  .ulc li .fastEnter .focus{
+	padding:10px;
+	color:#999;
+}
+
+
+.proOther  .ulc li .userEstimate{
+	border-top:3px solid #666;
+}
+.proOther  .ulc li .userEstimate .tt{
+	line-height:35px;
+	text-align:center;
+	font-size: 14px;
+	color:black;
+	border-top: 1px solid white;
+	background-color: #ccc;
+}
+.proOther  .ulc li .userEstimate .tc{
+	padding:15px 10px;
+}
+.proOther  .ulc li .userEstimate .tc .tc-head{
+	
+	
+}
+.proOther  .ulc li .userEstimate .tc .tc-head .one{
+	width: 100%;	
+
+}
+.proOther  .ulc li .userEstimate .tc .tc-head .one .fl{
+	font-size:15px;
+	color:#aaa;
+}
+.proOther  .ulc li .userEstimate .tc .tc-content{
+	margin-top:10px;
+	font-size: 15px;
+	color:black;
+	line-height: 23px;
+	margin-bottom:10px;
+
+}
+
+.proOther  .ulc li .userEstimate .tc .tc-reback{
+	color:#aaa;	
+}
+.proOther  .ulc li .userEstimate .moreEstimate{
+	padding:10px 5px;
+}
+.proOther  .ulc li .userEstimate .moreEstimate a{
+	display: block;
+	border:1px solid #ccc;
+	border-radius:5px;
+	text-align:center;
+	font-size:16px;
+	color:black;
+	line-height:35px; 
+	background-color: #ccc;
+	background: -webkit-gradient(linear,0 0, 0 100%,from(#fff), to(#ccc));
+}

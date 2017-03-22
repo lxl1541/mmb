@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>category</title>
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
 
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="lib/iconfont/iconfont.css">
 	<script src="lib/jquery/jquery.min.js"></script>
 	<script src="lib/template.js"></script>
-
+	<!-- 分类标题模板 -->
 	<script id="cateTitle" type="text/html">
 		<ul>
 			{{each result as value}}
@@ -26,17 +26,27 @@
 			{{/each}}
 		</ul>
 	</script>
+	<!-- 分类列表模板 -->
 	<script id="cateList" type="text/html">
 		<div class="tc row">
 			{{each result as value}}
 					<div class="col-xs-4">
-						<a href="javascript:">{{value.category}}</a>
+						<a href="proList.html?categoryId={{value.categoryId}}">{{value.category}}</a>
 					</div>
 					
 			{{/each}}
-			{{if result.length%3!=0}}
+			{{if result.length%3==2}}
 					<div class="col-xs-4">
-						<a href="javascript:"> $npmb</a>
+						<a href="javascript:"> </a>
+					</div>
+
+			{{/if}}
+			{{if result.length%3==1}}
+					<div class="col-xs-4">
+						<a href="javascript:"> </a>
+					</div>
+					<div class="col-xs-4">
+						<a href="javascript:"> </a>
 					</div>
 
 			{{/if}}

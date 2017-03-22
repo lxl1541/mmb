@@ -1,0 +1,39 @@
+{
+    "result": [
+        {
+            "procuctId": 0,
+            "product": "电视"
+        },
+        {
+            "productId": 1,
+            "product": "空调"
+        },
+        {
+            "procuctId": 2,
+            "product": "冰箱"
+        },
+        {
+            "productId": 3,
+            "product": "洗衣机"
+        },
+        {
+            "procuctId": 4,
+            "product": "烤箱"
+        },
+        {
+            "productId": 5,
+            "product": "空调"
+        },
+         {
+            "productId": 6,
+            "product": "洗衣机"
+        },
+        {
+            "procuctId": 7,
+            "product": "烤箱"
+        },
+        {
+            "productId": 8,
+            "product": "空调"
+        }]
+}

@@ -1,40 +1,74 @@
 {
     "result": [
         {
-            "procuctId": 0,
-            "product": "电视"
+            "categoryId": 0,
+            "category": "电视",
+            "titleId": 0,
+            "_id": "5806e6ea48985cb016b082e8",
+            "__v": 0
         },
         {
-            "productId": 1,
-            "product": "空调"
+            "categoryId": 1,
+            "category": "空调",
+            "titleId": 0,
+            "_id": "5806e6ea48985cb016b082e9",
+            "__v": 0
         },
         {
-            "procuctId": 2,
-            "product": "冰箱"
+            "categoryId": 2,
+            "category": "影院",
+            "titleId": 0,
+            "_id": "5806e6ea48985cb016b082ea",
+            "__v": 0
         },
         {
-            "productId": 3,
-            "product": "洗衣机"
+            "categoryId": 3,
+            "category": "冰箱",
+            "titleId": 0,
+            "_id": "5806e6ea48985cb016b082eb",
+            "__v": 0
         },
         {
-            "procuctId": 4,
-            "product": "烤箱"
+            "categoryId": 4,
+            "category": "DVD",
+            "titleId": 0,
+            "_id": "5806e6ea48985cb016b082ec",
+            "__v": 0
         },
         {
-            "productId": 5,
-            "product": "空调"
+            "categoryId": 5,
+            "category": "音响/音箱",
+            "titleId": 0,
+            "_id": "5806e6ea48985cb016b082ed",
+            "__v": 0
+        },
+        {
+            "categoryId": 6,
+            "category": "洗衣机",
+            "titleId": 0,
+            "_id": "5806e6ea48985cb016b082ee",
+            "__v": 0
+        },
+        {
+            "categoryId": 7,
+            "category": "热水器",
+            "titleId": 0,
+            "_id": "5806e6ea48985cb016b082ef",
+            "__v": 0
+        },
+        {
+            "categoryId": 8,
+            "category": "酒柜/冰吧/冷柜",
+            "titleId": 0,
+            "_id": "5806e6ea48985cb016b082f0",
+            "__v": 0
+        },
+        {
+            "categoryId": 9,
+            "category": "消毒柜/洗碗机",
+            "titleId": 0,
+            "_id": "5806e6ea48985cb016b082f1",
+            "__v": 0
         }
-         {
-            "productId": 6,
-            "product": "洗衣机"
-        },
-        {
-            "procuctId": 7,
-            "product": "烤箱"
-        },
-        {
-            "productId": 8,
-            "product": "空调"
-        }
-        ]
+    ]
 }

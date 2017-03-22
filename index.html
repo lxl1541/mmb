@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style='overflow-x:hidden '>
 <head>
 	<meta charset="UTF-8">
 	<title>index</title>
@@ -14,10 +14,10 @@
 	<!-- <link rel="shortcut icon" href="path/to/favicon.ico"> -->
 
 	<script src="lib/jquery/jquery.min.js"></script>
-	<script src="js/index.js"></script>
+	
 	<script src="lib/template.js"></script>
 	
-	
+	<!-- 分类模板 -->
 	<script id="mainCate" type="text/html">
 	 	<div class="row">
 			 	{{each result as value}}
@@ -31,6 +31,7 @@
 			 	{{/each}}
 		</div>
 	</script>
+	<!-- 超值折扣模板 -->
 	<script id="discoutRe" type="text/html">	
 		{{each result as value index}}
 			
@@ -56,7 +57,7 @@
 	</script>
 </head>
 <body>
-	<!-- <div class="containner"> -->
+	<div class="containner">
 	<!-- 头部 -->
 	<div class="header clearfix">
 		<div class="logo fl">
@@ -217,7 +218,8 @@
 			<p>m.manmanbuy.com</p>
 		</div>
 	</div>
-	<!-- </div> -->
+	</div>
 </body>
-	
+	<script src="js/base.js"></script>
+	<script src="js/index.js"></script>
 </html>

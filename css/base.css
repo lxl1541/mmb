@@ -54,6 +54,16 @@ a:hover{
 .mainColor{
 	color:#ff841d;
 }
+.mainRed{
+	color:#e4393c;
+}
+.fontWeight{
+	font-weight: 900;
+}
+/*========containner==========*/
+.containner{
+	min-width: 200px;
+}
 /*=======header=======*/
 .header{
 	height: 50px;
@@ -117,9 +127,105 @@ a:hover{
 	right:10px;
 	top: 10px;
 }
+/*======discountRecoment======*/
+.discountRecoment{
+	/*height: 35px;*/
+	margin-top: 4px;
+	position: relative;
+	/*background-color: white;*/
+}
+.discountRecoment .reTitle{
+	padding-left:10px;
+	line-height: 35px;
+	background-color: #ff9000;
+	border:1px solid  #ffc881;
+}
+.discountRecoment .reTitle span{
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+}
+.discountRecoment .reTitle img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right:10px;
+	top: 7px;
+}
+
+.discountRecoment .reContent ul li {
+	padding:14px 8px;
+	background-color: white;
+	border-bottom:1px solid #ccc;
+}
+.discountRecoment .reContent ul li > a {
+	display: block;
+}
+.discountRecoment .reContent .pic{
+	width: 110px;
+}
+.discountRecoment .reContent  img {
+	width: 100px;
+	height: 100px;
+} 
+.discountRecoment .reContent .other {
+	margin-left:10px;
+	overflow: hidden;
+	padding-left:90px: 
+}
+.discountRecoment .reContent .other .info{
+	font-size: 12px;
+	color:#a1a1a1;
+	margin-top: 30px;
+}
+.discountRecoment .reContent .other .info .iconfont{
+	margin-right: 3px;
+}
+.discountRecoment .more a{
+	display: block;
+	width: 100%;
+	margin:5px;
+	border-radius:5px;
+	text-align: center;
+	line-height: 30px;	
+	border:1px solid #dddddd;
+	background-image: linear-gradient(#ffffff,#f4f4f4);
+}
+/*=========proPage============*/
+.product .proPage {
+	/*position: relative;*/
+	display: flex;
+	justify-content:space-between;
+	padding-top: 20px;
+	background-color: white;
+	margin-bottom:30px;
+}
+.product .proPage a {
+	width: 82px;
+	line-height: 33px;
+	display: block;
+	border:1px solid #bbb;
+	border-radius:5px;
+	background-color: #ececec;
+	background: -webkit-gradient(linear, 0 0 ,0 100% ,from(#ececec),to(#ccc));
+	text-align: center;
+	font-size: 15px;
+	color:#666;
+}
+.product .proPage .prePage{
+
+}
+.product .proPage .nextPage{
+
+}
+.product .proPage select{
+	height: 33px;
+	width: 90px;
+	padding-left: 20px;
+}
 /*===========foot=========*/
 .foot{
-	margin-top:5px;
+	margin-top:15px;
 	background-color: #efefef;
 }
 .foot .foot-btn ul {
@@ -151,4 +257,33 @@ a:hover{
 	font-size: 14px;
 	color:rgb(119, 113, 113);
 	margin-right: 2px;
+}
+
+
+/*=========proNav============*/
+.product .proNav{
+	line-height: 36px;
+	border-top:1px solid #ebebeb;
+	border-bottom:1px solid #ccc;
+	font-size: 14px;
+	padding-left: 8px;
+	position:relative;
+	background: -webkit-gradient(linear,0 0 ,0 100%,from(#fff),to(#ebebeb));
+}
+.product .proNav a{
+	color:#5a5a5a;
+	padding-right: 4px;
+}
+.product .proNav a.filterBtn{
+	border:1px solid #ccc;
+	display: block;
+	line-height: 25px;
+	width: 50px;
+	text-align: center;
+	position: absolute;
+	right: 3px;
+	top: 5px;
+	background-color: #ebebeb;
+	background:-webkit-gradient(linear,0 0,0 100%,from(#ebebeb),to(#fff));
+	border-radius:5px;
 }

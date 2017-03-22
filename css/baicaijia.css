@@ -1,0 +1,12 @@
+.header{
+	background-color: #e4393c;
+}
+/*=====proNav=====*/
+.proNav ul {
+	width: 1000px;
+}
+.proNav ul li{
+	float:left;
+	font-size: 14px;
+	padding:5px 10px;
+}

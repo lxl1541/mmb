@@ -1,0 +1,106 @@
+.containner{
+	background-color: white;
+}
+/*=======onPro========*/
+.onePro {
+	padding:15px 10px ;
+}
+.onePro .proTitle h3{
+	font-size: 18px;
+	/*font-weight:bold;*/
+}
+.onePro .proTitle h4{
+	font-size: 15px;
+	margin-top: 5px;
+}
+.onePro .proTitle-info{
+	margin: 15px 0;
+}
+
+.onePro .proTitle-info span{
+	color: #999999;
+	margin:0px 4px;
+}
+.onePro .proInfo{
+	font-size: 16px;
+}
+.onePro .proInfo .shortInfo {
+	margin-bottom: 24px;
+}
+.onePro .proInfo .shortInfo img{
+	width: 120px;
+	height: 120px;
+	float: right;
+}
+.onePro .proInfo .detailInfo p{
+	margin-bottom: 30px;
+}
+.onePro .proInfo .detailInfo .jpg{
+	text-align: center;
+}
+.onePro .proInfo .detailInfo .jpg img{
+	max-width: 100%;
+	/*width: 100%;*/
+}
+/*============area===========*/
+.area{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.area ul{
+	padding:0 10px 7px;
+	width: 118px;
+	box-shadow: 1px 2px 5px #ccc;
+}
+.area ul li{
+	border-bottom: 1px dashed #ccc;
+	padding:0px 5px;
+}
+.area ul li a{
+	display:  block;
+	line-height: 20px;
+}
+
+/*======toBuy=====*/
+.toBuy{
+	padding:20px 20px;
+	text-align: center;
+	border-bottom:1px solid #ccc;
+}
+.toBuy > a {
+	display: block;
+	color:white;
+	/*font-size: 14px;*/
+	background-color: #FF9000;
+	border-radius:5px;
+	line-height: 40px;
+}
+/*======com=======*/
+.com {
+	padding:10px;
+	color: black;
+	font-size: 14px;
+}
+.com .comInput .form{
+	margin: 15px 0;
+	border:2px solid #ECEAE8;
+	border-radius: 2px;
+}
+
+.com .comInput .form textarea {
+	border-bottom:1px solid #f2f2f2;
+	width: 100%;
+}
+.com .comInput .form .sub{
+	margin-top: -3px;
+	background-color: #fbfbfb;
+}
+.com .comInput .form .sub input{
+	width: 100px;
+	height:35px;
+	background-color:#ff841d;
+	color: white;
+	font-size:14px;
+	float:right;
+}
